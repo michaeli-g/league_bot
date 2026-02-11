@@ -1,0 +1,32 @@
+# League Bot – YOLO Training Dataset Configuration
+#
+# Directory structure:
+#   vision/dataset/
+#   ├── images/
+#   │   ├── train/    ← training images (.jpg)
+#   │   └── val/      ← validation images (.jpg)
+#   └── labels/
+#       ├── train/    ← YOLO label files (.txt)
+#       └── val/      ← YOLO label files (.txt)
+#
+# Label format (per line in .txt):
+#   class_index center_x center_y width height
+#   (all values normalized 0.0 - 1.0 except class_index)
+
+path: ./vision/dataset
+train: images/train
+val: images/val
+
+nc: 10  # number of classes
+
+names:
+  0: champion_ally
+  1: champion_enemy
+  2: minion_ally
+  3: minion_enemy
+  4: tower
+  5: inhibitor
+  6: dragon
+  7: baron
+  8: skillshot
+  9: health_bar

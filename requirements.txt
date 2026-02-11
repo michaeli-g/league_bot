@@ -1,0 +1,14 @@
+# League Bot - Python Dependencies
+# Install: pip install -r requirements.txt
+
+# Core
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# AI / Vision
+ultralytics>=8.1.0          # YOLOv8/v10 object detection
+ollama>=0.4.0               # Local LLM tactical reasoning
+
+# Hardware Communication
+pyserial>=3.5               # Serial comms with Raspberry Pi Pico
